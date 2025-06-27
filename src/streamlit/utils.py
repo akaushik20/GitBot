@@ -176,7 +176,7 @@ def layout(
                         streamlit_agent_create_endpoint(
                             agentMessage(**dict_agent)
                         )
-                        st.write("agent created!")
+                        st.write("Agent created!")
                         agents = get_indexed_agents()
                         agents.sort()
                         st.session_state["agents"] = agents
@@ -201,7 +201,7 @@ def layout(
                         streamlit_agent_update_endpoint(
                             agentMessage(**dict_agent), is_llm_only_update
                         )
-                        st.write("agent updated!")
+                        st.write("Agent updated!")
 
                 st.balloons()
                 time.sleep(3)

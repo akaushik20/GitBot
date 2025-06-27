@@ -45,7 +45,7 @@ def rebuild_agent(agent_name):
                                 agentMessage(**config), is_llm_only_update=False
                             )
             
-            st.write("agent rebuilt!")
+            st.write("Agent rebuilt!")
 
         st.balloons()
         time.sleep(3)
@@ -92,7 +92,7 @@ def delete_agent(agent_name):
     if st.button("Delete"):
         agents = get_indexed_agents()
         if agent_name not in agents:
-            st.error("agent not found")
+            st.error("Agent not found")
 
         agents.remove(agent_name)
 
@@ -100,7 +100,7 @@ def delete_agent(agent_name):
 
         delete_s3_agent_contents(agent_name)
 
-        st.success("agent deleted successfully")
+        st.success("Agent deleted successfully")
 
         agents = get_indexed_agents()
         agents.sort()

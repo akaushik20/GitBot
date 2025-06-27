@@ -18,7 +18,7 @@ def vector_embedding_creation_page():
         st.image("./streamlit/Logo_gitbot1.png", width=100)
     with col2:
         st.subheader("GitHub ChatBot")
-    st.subheader("Create a new agent")
+    st.subheader("Create a new Agent")
     layout()
 
 

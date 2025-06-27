@@ -18,8 +18,8 @@ def main():
     pg = st.navigation(
         [
             st.Page("chat_interface.py", title="🚀 GitBot"),
-            st.Page("create_agent.py", title="✨ Create new agent"),
-            st.Page("existing_agent.py", title="🛠 Existing agent"),
+            st.Page("create_agent.py", title="✨ Create new Agent"),
+            st.Page("existing_agent.py", title="🛠 Manage Agents"),
         ]
     )
     pg.run()

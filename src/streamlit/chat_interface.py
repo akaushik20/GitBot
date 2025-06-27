@@ -28,7 +28,7 @@ def chat_interface():
             agents = get_indexed_agents()
             agents.sort()
             st.session_state["agents"] = agents
-        agent_name = st.selectbox("agent Name", st.session_state["agents"])
+        agent_name = st.selectbox("Agent Name", st.session_state["agents"])
 
     prompt = st.chat_input("Enter your questions here")
 
